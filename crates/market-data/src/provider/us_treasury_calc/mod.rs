@@ -1244,7 +1244,10 @@ mod tests {
         }))
         .unwrap();
         assert_eq!(
-            parse_bond_details(legacy).unwrap().coupon_frequency.as_deref(),
+            parse_bond_details(legacy)
+                .unwrap()
+                .coupon_frequency
+                .as_deref(),
             Some("SEMI_ANNUAL")
         );
     }
